@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "hi",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "author": "Shreyas Kumar",
   "license": "ISC",
