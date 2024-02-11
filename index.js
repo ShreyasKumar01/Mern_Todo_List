@@ -3,7 +3,9 @@ import cors from 'cors';
 // import bodyParser from 'body-parser';
 import Connection from './database/db.js';
 import Routes from './routes/route.js';
+import dotenv from 'dotenv'
 
+const PORT=process.env.PORT || 4500
 const app=express();
 
 app.use(cors());
@@ -17,7 +19,7 @@ app.get('/', (req,resp) =>{
     resp.send("New Server");
 })
 Connection();
-app.listen(4500, ()=>
+app.listen(PORT, ()=>
 {
     console.log('Your server is running fine..');
 })
